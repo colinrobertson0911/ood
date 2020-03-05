@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<!-- Console Appender -->
+		<Console name="Console" target="SYSTEM_OUT" ignoreExceptions="false">
+ 			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %c{1.} - %msg%n" />
+		</Console>
+
+		<!-- Standard file Appender -->
+ 		<File name="LogFile" fileName="C:/Users/Colin.Robertson/JavaEclipseWorkspace/ood.Log"
+			immediateFlush="false" append="true">
+			<PatternLayout
+				pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</File>
+
+		<!-- Rolling file Appender -->
+<!-- 		<RollingFile name="RollingLogFile" ignoreExceptions="false">
+			<FileName append="true">C://Temp//bookshop.log</FileName>
+			<FilePattern>C://Temp//time-based-logs//%d{yyyy-MM-dd-hh-mm}.log.zip</FilePattern>		
+			<PatternLayout
+				pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="2" modulate="true" />
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="7" />
+		</RollingFile> -->
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="LogFile" />
+			<!-- <AppenderRef ref="RollingLogFile" /> -->
+		</Root>
+		<Logger name="com.fdmgroup" level="trace"/>
+	</Loggers>
+
+</Configuration>
