@@ -20,7 +20,7 @@ public class CollectionsDemo {
 		arrayListExample.add(null);
 		arrayListExample.add("Second string");
 		
-		//CollectionsPrintUtility.printCollection(arrayListExample);
+		CollectionsPrintUtility.printCollection(arrayListExample);
 		
 		//hashSet allows no duplicates , one null, not ordered
 		Set<String> hashSetExample = new HashSet<>();
@@ -30,7 +30,7 @@ public class CollectionsDemo {
 		hashSetExample.add(null);
 		hashSetExample.add("hashSet 2");
 		
-		//CollectionsPrintUtility.printCollection(hashSetExample);
+		CollectionsPrintUtility.printCollection(hashSetExample);
 		
 		//TreeSet allows no duplicates or nulls, and is sorted
 		SortedSet <Integer> sortedSetExample = new TreeSet<>();
@@ -40,7 +40,7 @@ public class CollectionsDemo {
 		sortedSetExample.add(3);
 		sortedSetExample.add(1);
 		
-		//CollectionsPrintUtility.printCollection(sortedSetExample);
+		CollectionsPrintUtility.printCollection(sortedSetExample);
 		
 		//HashMap allows no duplicates, one null, sorted
 		User user1 = new User(1, "Mark", "Lancaster");

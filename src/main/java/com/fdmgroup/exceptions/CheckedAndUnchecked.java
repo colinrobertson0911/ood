@@ -10,7 +10,6 @@ public class CheckedAndUnchecked {
 		try {
 			checked();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

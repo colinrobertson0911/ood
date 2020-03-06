@@ -15,7 +15,7 @@ public class CountryAbbriviations {
 		mapAbbriviation.put("GER", "Germany");
 		mapAbbriviation.put("IT", "Italy");
 		
-		System.out.println(getCountryByAbbreviation("us", mapAbbriviation));
+		System.out.println(getCountryByAbbreviation("it", mapAbbriviation));
 		System.out.println(getCountryByAbbreviation("xxx", mapAbbriviation));
 		
 	}
